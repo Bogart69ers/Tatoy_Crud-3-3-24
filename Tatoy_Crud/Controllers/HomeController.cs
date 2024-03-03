@@ -58,7 +58,6 @@ namespace Tatoy_Crud.Controllers
         public ActionResult Delete(int id)
         {
             _userRepo.Delete(id);
-            _userRepo1.Delete(id);
             TempData["Msg"] = $"User deleted!";
 
             return RedirectToAction("Index");

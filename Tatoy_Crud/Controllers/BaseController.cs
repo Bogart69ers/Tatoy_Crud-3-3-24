@@ -10,12 +10,10 @@ namespace Tatoy_Crud.Controllers
     {
         public CRUDEntities _db;
         public BaseRepository<User> _userRepo;
-        public BaseRepository<UserRole> _userRepo1;
         public BaseController()
         {
             _db = new CRUDEntities();
             _userRepo = new BaseRepository<User>();
-            _userRepo1 = new BaseRepository<UserRole>();
         }
     }
 }
